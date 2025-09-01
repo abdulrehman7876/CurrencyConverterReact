@@ -18,6 +18,7 @@ function App() {
   },[])
 
   const onAmountChangefrom = (evt)=>{
+    if (evt.target.value < 0) return;  
     setAmountfrom(Number(evt.target.value))
   }
   const onAmountChangeto = (evt)=>{
